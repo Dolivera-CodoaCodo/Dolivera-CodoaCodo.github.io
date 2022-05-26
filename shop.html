@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotPickin´Bros</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://allfont.es/allfont.css?fonts=marcelle-script" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/2719dbd6e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="img_up"></div>
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="shows.html">SHOWS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="form-h2">Formulario de Pedido</h2>
+        <form action="show_data.html" target="_blank">
+            <div class="form-pedido">
+                <label for="nombre">Nombre: </label><input class="input-label" type="text" name="nombre"
+                    placeholder="Ingrese su nombre aqui..."> <br><br>
+                <label for="apellido">Apellido:</label><input class="input-label" type="text" name="apellido"
+                    placeholder="Ingrese su apellido aqui..."> <br><br>
+                <label for="direccion">Direccion:</label><input class="input-label" type="text" name="direccion"
+                    placeholder="Ingrese su dirección aqui..."> <br><br>
+                <label for="numero">Numero:</label><input class="input-label" type="number" name="numero"
+                    placeholder="Ingrese el numero..">
+                <br><br>
+                <label for="ciudad">Ciudad: </label><input class="input-label" type="text" name="ciudad" value="C.A.B.A.">
+                <br><br>
+                <label for="codpostal">Código Postal:</label><input class="input-label" type="text" name="codpostal"
+                    placeholder="Ingrese su codigo postal aqui..."> <br> <br>
+                <label for="telefono">Telefono: </label><input class="input-label" type="tel" name="telefono"
+                    placeholder="ingrese su telefono aqui ...."> <br><br>
+                <label for="nacimiento">Fecha Nac.(mm/dd/yyyy): </label> <input class="input-label" type="date"
+                    name="nacimiento"> <br><br>
+                <label for="mail">Mail: </label><input class="input-label" type="email" name="mail"> <br><br>
+            </div>
+            <div class="form-check">
+                <p> Catálogo <br>
+                    <input type="checkbox" name="catalogo" value="CD"> CD <br>
+                    <input type="checkbox" name="catalogo" value="DVD"> DVD <br>
+                    <input type="checkbox" name="catalogo" value="Gorra Trucker"> Gorra Trucker <br>
+                    <input type="checkbox" name="catalogo" value="Remera"> Remera <br>
+                </p>
+            </div>
+            <div class="form-fin">
+                <label for="envio">Tipo de Envío</label>
+                <select id="envio" name="estudios">
+                    <option value="Correo">Por Correo Argentino</option>
+                    <option value="ups">UPS</option>
+                    <option value="retira">Retira por Local</option>
+                </select><br><br><br>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea name="comentarios" rows="10" cols="30"></textarea><br><br>
+               
+                <input type="submit" value="Enviar">
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <div>
+            Derechos reservados 2022
+            <a href="https://www.facebook.com/hpbcountry"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hotpickinbrothers"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/hpbrothers"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    </footer>
+
+</body>
+
+</html>

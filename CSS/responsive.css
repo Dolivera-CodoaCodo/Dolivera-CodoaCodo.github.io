@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #1c1c1d;
+	background-image: url(../img/DSC_4543.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	background-position: left;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1500px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 5fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas:
+		"header header header"
+		"nav nav nav"
+		"member-1 member-2 member-3"
+		"member-4 member-5 member-6"
+		"footer footer footer";
+}
+
+@media screen and (max-width: 900px) {
+	.contenedor {
+		grid-template-areas:
+			"header header "
+			"nav nav "
+			"member-1 member-2 "
+			"member-1 member-2 "
+			"member-3 member-4 "
+			"member-5 member-6 "
+			"footer footer ";
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contenedor {
+		grid-template-areas:
+			"header "
+			"nav "
+			"member-1 "
+			"member-2 "
+			"member-3 "
+			"member-4 "
+			"member-5 "
+			"member-6 "
+			"footer ";
+	}
+}
+
+.contenedor>div,
+.contenedor .nav,
+.contenedor .header,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background-color: rgba(41, 36, 36, 0);
+	grid-area: header;
+	text-align: center;
+}
+
+.contenedor .nav {
+	background-color: rgba(0, 0, 0, .2);
+	grid-area: nav;
+}
+
+.nav ul {
+	text-align: center;
+}
+
+.nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+.nav ul li a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+	font-weight: 500;
+	padding: 15px;
+	transition: all ease 0.5s;
+}
+
+.nav ul li a:hover {
+	background-color: #211b4385;
+}
+
+.contenedor .member-1,
+.contenedor .member-2,
+.contenedor .member-3,
+.contenedor .member-4,
+.contenedor .member-5,
+.contenedor .member-6 {
+	background-color: rgba(66, 54, 54, 0.7);
+	/* background: #505255; */
+	height: 230px;
+	max-width: 100%;
+	overflow: auto
+}
+
+.div-img {
+	float: left;
+}
+
+.div-img img {
+	max-height: 220px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.div-cont {
+	margin-left: 210px;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.div-title {
+	font-size: 200%;
+	text-align: left;
+}
+
+.contenedor .member-1 {
+	grid-area: member-1;
+}
+
+.contenedor .member-2 {
+	grid-area: member-2;
+}
+
+.contenedor .member-3 {
+	grid-area: member-3;
+}
+
+.contenedor .member-4 {
+	grid-area: member-4;
+}
+
+.contenedor .member-5 {
+	grid-area: member-5;
+}
+
+.contenedor .member-6 {
+	grid-area: member-6;
+}
+
+.contenedor .footer {
+	background-color: rgba(0, 0, 0, .2);
+	color: #fff;
+	grid-area: footer;
+}
+
+.contenedor .footer div {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 12px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: 2px;
+	text-align: center;
+}
